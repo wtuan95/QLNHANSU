@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56D7FA0D-2532-4537-AE3A-D53AD514106B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLNHANSU</RootNamespace>
+    <AssemblyName>QLNHANSU</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AdminBLL.cs" />
+    <Compile Include="BLL\LuongBLL.cs" />
+    <Compile Include="BLL\NhanVienBLL.cs" />
+    <Compile Include="BLL\PhongBanBLL.cs" />
+    <Compile Include="DAL\DATABASE.cs" />
+    <Compile Include="DAL\Luong.cs" />
+    <Compile Include="DAL\NhanVien.cs" />
+    <Compile Include="DAL\PhongBan.cs" />
+    <Compile Include="PL\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmDoimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmDoimatkhau.Designer.cs">
+      <DependentUpon>frmDoimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmdsNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmdsNhanvien.designer.cs">
+      <DependentUpon>frmdsNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmKetNoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmKetNoi.Designer.cs">
+      <DependentUpon>frmKetNoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmSuaNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmSuaNhanVien.Designer.cs">
+      <DependentUpon>frmSuaNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmThemNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmThemNhanvien.Designer.cs">
+      <DependentUpon>frmThemNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmDoimatkhau.resx">
+      <DependentUpon>frmDoimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmdsNhanvien.resx">
+      <DependentUpon>frmdsNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmKetNoi.resx">
+      <DependentUpon>frmKetNoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmSuaNhanVien.resx">
+      <DependentUpon>frmSuaNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmThemNhanvien.resx">
+      <DependentUpon>frmThemNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\access.jpg" />
+    <Content Include="Images\change_password.jpg" />
+    <Content Include="Images\connection.jpg" />
+    <Content Include="Images\login.jpg" />
+    <Content Include="Images\Visual-Studio-2015.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

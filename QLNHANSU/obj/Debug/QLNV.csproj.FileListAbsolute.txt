@@ -1,0 +1,9 @@
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\bin\Debug\QLNV.exe.config
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\obj\Debug\QLNV.csprojResolveAssemblyReference.cache
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\obj\Debug\QLNV.PL.frmdsNhanvien.resources
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\obj\Debug\QLNV.Properties.Resources.resources
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\obj\Debug\QLNV.csproj.GenerateResource.Cache
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\bin\Debug\QLNV.exe
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\bin\Debug\QLNV.pdb
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\obj\Debug\QLNV.exe
+c:\users\sinhvien\documents\visual studio 2013\Projects\QLNV\QLNV\obj\Debug\QLNV.pdb

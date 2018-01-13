@@ -1,0 +1,1 @@
+Data Source = .;Integrated Security = True;Database=QLNHANSU;

@@ -1,0 +1,69 @@
+D:\C# Winform\QLNV\QLNV\QLNHANSU\bin\Debug\QLNV.exe.config
+D:\C# Winform\QLNV\QLNV\QLNHANSU\obj\Debug\QLNV.exe
+D:\C# Winform\QLNV\QLNV\QLNHANSU\obj\Debug\QLNV.pdb
+D:\C# Winform\QLNV\QLNV\QLNHANSU\bin\Debug\QLNV.exe
+D:\C# Winform\QLNV\QLNV\QLNHANSU\bin\Debug\QLNV.pdb
+D:\C# Winform\QLNV\QLNV\QLNHANSU\obj\Debug\QLNHANSU.csprojResolveAssemblyReference.cache
+D:\C# Winform\QLNV\QLNV\QLNHANSU\obj\Debug\QLNV.PL.frmdsNhanvien.resources
+D:\C# Winform\QLNV\QLNV\QLNHANSU\obj\Debug\QLNV.Properties.Resources.resources
+D:\C# Winform\QLNV\QLNV\QLNHANSU\obj\Debug\QLNHANSU.csproj.GenerateResource.Cache
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csprojResolveAssemblyReference.cache
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csproj.GenerateResource.Cache
+I:\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe.config
+I:\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe
+I:\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.pdb
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Properties.Resources.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.exe
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.pdb
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDangNhap.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmdsNhanvien.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmKetNoi.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmMenu.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmSuaNhanVien.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmThemNhanvien.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDoimatkhau.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe.config
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.exe
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.pdb
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDangNhap.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDoimatkhau.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmdsNhanvien.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmKetNoi.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmMenu.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmSuaNhanVien.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmThemNhanvien.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Properties.Resources.resources
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csproj.GenerateResource.Cache
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe
+C:\Users\Dell\Desktop\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.pdb
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe.config
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.exe
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.pdb
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.pdb
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csprojResolveAssemblyReference.cache
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDangNhap.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDoimatkhau.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmdsNhanvien.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmKetNoi.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmMenu.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmSuaNhanVien.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmThemNhanvien.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Properties.Resources.resources
+I:\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csproj.GenerateResource.Cache
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe.config
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.exe
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.pdb
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.pdb
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csprojResolveAssemblyReference.cache
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDangNhap.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDoimatkhau.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmdsNhanvien.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmKetNoi.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmMenu.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmSuaNhanVien.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmThemNhanvien.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Properties.Resources.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csproj.GenerateResource.Cache
