@@ -1,0 +1,5 @@
+H:\GitHub\QLNHANSU\DAL\bin\Debug\DAL.dll
+H:\GitHub\QLNHANSU\DAL\bin\Debug\DAL.pdb
+H:\GitHub\QLNHANSU\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\GitHub\QLNHANSU\DAL\obj\Debug\DAL.dll
+H:\GitHub\QLNHANSU\DAL\obj\Debug\DAL.pdb

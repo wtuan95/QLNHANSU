@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using QLNHANSU.BLL;
+using BLL;
 namespace QLNHANSU.PL
 {
     public partial class frmDangNhap : Form
@@ -27,7 +20,7 @@ namespace QLNHANSU.PL
 
         private void picDangnhap_Click(object sender, EventArgs e)
         {
-            AdminBLL adminBLL = new AdminBLL();
+            QuanTriBLL quantriBLL = new QuanTriBLL();
             if(txtdangnhap.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập tài khoản.");
@@ -38,7 +31,7 @@ namespace QLNHANSU.PL
                 MessageBox.Show("Vui lòng nhập mật khẩu.");
                 return;
             }
-            if(adminBLL.KiemTraDangNhap(txtdangnhap.Text, txtmatkhau.Text))
+            if(quantriBLL.KiemTraDangNhap(txtdangnhap.Text, txtmatkhau.Text))
             {
                 taikhoan = txtdangnhap.Text;
                 matkhau = txtmatkhau.Text;

@@ -1,0 +1,9 @@
+H:\GitHub\QLNHANSU\BLL\bin\Debug\BLL.dll
+H:\GitHub\QLNHANSU\BLL\bin\Debug\BLL.pdb
+H:\GitHub\QLNHANSU\BLL\bin\Debug\DAL.dll
+H:\GitHub\QLNHANSU\BLL\bin\Debug\DAL.pdb
+H:\GitHub\QLNHANSU\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+H:\GitHub\QLNHANSU\BLL\obj\Debug\BLL.dll
+H:\GitHub\QLNHANSU\BLL\obj\Debug\BLL.pdb
+H:\GitHub\QLNHANSU\BLL\bin\Debug\DTO.dll
+H:\GitHub\QLNHANSU\BLL\bin\Debug\DTO.pdb

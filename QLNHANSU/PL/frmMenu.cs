@@ -19,7 +19,7 @@ namespace QLNHANSU.PL
 
         private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmdsNhanvien frm = new frmdsNhanvien();
+            frmQuanlynhanvien frm = new frmQuanlynhanvien();
             frm.MdiParent = this;
             frm.Show();
         }
@@ -29,24 +29,14 @@ namespace QLNHANSU.PL
             MessageBox.Show("Tên phần mềm: Phần mềm quản lý nhân sự version 1.0\r\nTác giả: tên tác giả\r\nNăm phát hành: 06/2016");
         }
 
-        private void thoátToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void frmMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        private void frmMenu_Load(object sender, EventArgs e)
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void báoCáoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Restart();
+            Application.Exit();
         }
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,6 +44,11 @@ namespace QLNHANSU.PL
             frmDoimatkhau frm = new frmDoimatkhau();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void thoátToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

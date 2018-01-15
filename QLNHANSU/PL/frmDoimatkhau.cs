@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using QLNHANSU.BLL;
+using BLL;
 namespace QLNHANSU.PL
 {
     public partial class frmDoimatkhau : Form
@@ -44,8 +37,8 @@ namespace QLNHANSU.PL
                 }
                 else
                 {
-                    AdminBLL adminBLL = new AdminBLL();
-                    if(adminBLL.DoiMatKhau(frmDangNhap.taikhoan, txtmatkhaumoi.Text) == 1)
+                    QuanTriBLL quantriBLL = new QuanTriBLL();
+                    if(quantriBLL.DoiMatKhau(frmDangNhap.taikhoan, txtmatkhaumoi.Text) == 1)
                     {
                         MessageBox.Show("Đổi mật khẩu thành công. Bạn sẽ phải thực hiện đăng nhập lại ngay bây giờ.");
                         Application.Restart();

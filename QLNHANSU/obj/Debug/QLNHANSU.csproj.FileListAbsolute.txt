@@ -67,3 +67,22 @@ H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmSuaNhanVien.resources
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmThemNhanvien.resources
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Properties.Resources.resources
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csproj.GenerateResource.Cache
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe.config
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.exe
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.pdb
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csprojResolveAssemblyReference.cache
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDangNhap.resources
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDoimatkhau.resources
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmKetNoi.resources
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmMenu.resources
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Properties.Resources.resources
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csproj.GenerateResource.Cache
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.pdb
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\BLL.dll
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\DTO.dll
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\DAL.dll
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\BLL.pdb
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\DTO.pdb
+H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\DAL.pdb
+H:\GitHub\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmQuanlynhanvien.resources

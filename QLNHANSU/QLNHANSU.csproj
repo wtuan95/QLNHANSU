@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QLNHANSU</RootNamespace>
     <AssemblyName>QLNHANSU</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DTO">
+      <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
@@ -47,14 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\AdminBLL.cs" />
-    <Compile Include="BLL\LuongBLL.cs" />
-    <Compile Include="BLL\NhanVienBLL.cs" />
-    <Compile Include="BLL\PhongBanBLL.cs" />
-    <Compile Include="DAL\DATABASE.cs" />
-    <Compile Include="DAL\Luong.cs" />
-    <Compile Include="DAL\NhanVien.cs" />
-    <Compile Include="DAL\PhongBan.cs" />
+    <Compile Include="PL\frmQuanlynhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmQuanlynhanvien.Designer.cs">
+      <DependentUpon>frmQuanlynhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,12 +71,6 @@
     </Compile>
     <Compile Include="PL\frmDoimatkhau.Designer.cs">
       <DependentUpon>frmDoimatkhau.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PL\frmdsNhanvien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\frmdsNhanvien.designer.cs">
-      <DependentUpon>frmdsNhanvien.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frmKetNoi.cs">
       <SubType>Form</SubType>
@@ -85,40 +84,22 @@
     <Compile Include="PL\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\frmSuaNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\frmSuaNhanVien.Designer.cs">
-      <DependentUpon>frmSuaNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PL\frmThemNhanvien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\frmThemNhanvien.Designer.cs">
-      <DependentUpon>frmThemNhanvien.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\frmQuanlynhanvien.resx">
+      <DependentUpon>frmQuanlynhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmDoimatkhau.resx">
       <DependentUpon>frmDoimatkhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\frmdsNhanvien.resx">
-      <DependentUpon>frmdsNhanvien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmKetNoi.resx">
       <DependentUpon>frmKetNoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\frmSuaNhanVien.resx">
-      <DependentUpon>frmSuaNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\frmThemNhanvien.resx">
-      <DependentUpon>frmThemNhanvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,6 +133,15 @@
     <Content Include="Images\connection.jpg" />
     <Content Include="Images\login.jpg" />
     <Content Include="Images\Visual-Studio-2015.jpg" />
+    <Content Include="Photos\nv01.bmp" />
+    <Content Include="Photos\ndtruong.bmp" />
+    <Content Include="Photos\nv02.bmp" />
+    <Content Include="Photos\nv03.bmp" />
+    <Content Include="Photos\nv04.bmp" />
+    <Content Include="Photos\pvhuong.bmp" />
+    <Content Include="Photos\pvkoa.bmp" />
+    <Content Include="Photos\tuannguyen.jpg" />
+    <Content Include="Photos\zzzzzz.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -129,7 +129,7 @@
             this.txtServerName.Name = "txtServerName";
             this.txtServerName.Size = new System.Drawing.Size(347, 20);
             this.txtServerName.TabIndex = 15;
-            this.txtServerName.Text = ".\\SQL2012";
+            this.txtServerName.Text = ".";
             // 
             // cboAuthentication
             // 
