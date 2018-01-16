@@ -24,5 +24,10 @@ namespace BLL
             return result;
 
         }
+        public int LayLuongCoBan(string MaCV)
+        {
+            return (int)db.ExecuteScalar("select LuongCoBan from ChucVu where MaCV = '" + MaCV + "'");
+
+        }
     }
 }

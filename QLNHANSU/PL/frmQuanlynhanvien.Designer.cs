@@ -64,14 +64,15 @@
             this.picHinh = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lstLoctheophong = new System.Windows.Forms.ListBox();
             this.lvNhanvien = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnBoLoc = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -79,11 +80,13 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.lstLoctheophong = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numLuong = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHinh)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numLuong)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,6 +106,8 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.numLuong);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnThayhinh);
             this.groupBox1.Controls.Add(this.txtTaoboi);
             this.groupBox1.Controls.Add(this.txtGhichu);
@@ -431,6 +436,17 @@
             this.panel1.Size = new System.Drawing.Size(214, 280);
             this.panel1.TabIndex = 3;
             // 
+            // lstLoctheophong
+            // 
+            this.lstLoctheophong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstLoctheophong.FormattingEnabled = true;
+            this.lstLoctheophong.ItemHeight = 19;
+            this.lstLoctheophong.Location = new System.Drawing.Point(0, 30);
+            this.lstLoctheophong.Name = "lstLoctheophong";
+            this.lstLoctheophong.Size = new System.Drawing.Size(212, 248);
+            this.lstLoctheophong.TabIndex = 3;
+            this.lstLoctheophong.SelectedIndexChanged += new System.EventHandler(this.lstLoctheophong_SelectedIndexChanged);
+            // 
             // lvNhanvien
             // 
             this.lvNhanvien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -453,6 +469,11 @@
             this.lvNhanvien.UseCompatibleStateImageBehavior = false;
             this.lvNhanvien.View = System.Windows.Forms.View.Details;
             this.lvNhanvien.Click += new System.EventHandler(this.lvNhanvien_Click);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Mã NV";
+            this.columnHeader1.Width = 80;
             // 
             // columnHeader2
             // 
@@ -483,11 +504,6 @@
             // 
             this.columnHeader7.Text = "Giới tính";
             this.columnHeader7.Width = 80;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Mã NV";
-            this.columnHeader1.Width = 80;
             // 
             // panel2
             // 
@@ -567,16 +583,31 @@
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // lstLoctheophong
+            // label3
             // 
-            this.lstLoctheophong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstLoctheophong.FormattingEnabled = true;
-            this.lstLoctheophong.ItemHeight = 19;
-            this.lstLoctheophong.Location = new System.Drawing.Point(0, 30);
-            this.lstLoctheophong.Name = "lstLoctheophong";
-            this.lstLoctheophong.Size = new System.Drawing.Size(212, 248);
-            this.lstLoctheophong.TabIndex = 3;
-            this.lstLoctheophong.SelectedIndexChanged += new System.EventHandler(this.lstLoctheophong_SelectedIndexChanged);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(742, 196);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 19);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Lương căn bản";
+            // 
+            // numLuong
+            // 
+            this.numLuong.Increment = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numLuong.Location = new System.Drawing.Point(851, 189);
+            this.numLuong.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.numLuong.Name = "numLuong";
+            this.numLuong.Size = new System.Drawing.Size(190, 26);
+            this.numLuong.TabIndex = 18;
             // 
             // frmQuanlynhanvien
             // 
@@ -589,9 +620,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmQuanlynhanvien";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý nhân viên";
             this.Load += new System.EventHandler(this.frmQuanlynhanvien_Load);
@@ -600,6 +631,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picHinh)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numLuong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -657,5 +689,7 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnBoLoc;
         private System.Windows.Forms.ListBox lstLoctheophong;
+        private System.Windows.Forms.NumericUpDown numLuong;
+        private System.Windows.Forms.Label label3;
     }
 }

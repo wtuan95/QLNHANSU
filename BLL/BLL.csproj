@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChamCongBLL.cs" />
     <Compile Include="ChucVuBLL.cs" />
     <Compile Include="NhanVienBLL.cs" />
     <Compile Include="PhongBanBLL.cs" />

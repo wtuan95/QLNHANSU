@@ -2,6 +2,7 @@
 using DAL;
 using System.Collections.Generic;
 using System.Data;
+using System;
 namespace BLL
 {
     public class PhongBanBLL
@@ -9,31 +10,121 @@ namespace BLL
         ConnectDB db = new ConnectDB();
         public List<PhongBan> DocDanhSach()
         {
-            DataTable tbl = db.Execute("select * from PhongBan");
-            List<PhongBan> dsPhongBan = new List<PhongBan>();
-            foreach (DataRow r in tbl.Rows)
+            try
             {
-                PhongBan phongBan = new PhongBan()
+                DataTable tbl = db.Execute("select * from PhongBan");
+                List<PhongBan> dsPhongBan = new List<PhongBan>();
+                foreach (DataRow r in tbl.Rows)
                 {
-                    MaPB = r[0].ToString(),
-                    TenPB = r[1].ToString()
-                };
-                dsPhongBan.Add(phongBan);
+                    PhongBan phongBan = new PhongBan()
+                    {
+                        MaPB = r[0].ToString(),
+                        TenPB = r[1].ToString()
+                    };
+                    dsPhongBan.Add(phongBan);
+                }
+                return dsPhongBan;
             }
-            return dsPhongBan;
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
-       
-        public string GetTenPhong(string maPhong)
+        public PhongBan LayPhongTheoMa(string MaPB)
         {
-            string query = "select TenPB from PhongBan where MaPB = '" + maPhong + "'";
-            object tenPhong = db.ExecuteScalar(query);
-            if (tenPhong == null)
+            try
             {
-                return "Chưa có";
+                string query = "select * from PhongBan where MaPB = '" + MaPB + "'";
+                DataTable dt = db.Execute(query);
+                if (dt.Rows.Count > 0)
+                {
+                    PhongBan result = new PhongBan()
+                    {
+                        MaPB = dt.Rows[0][0].ToString(),
+                        TenPB = dt.Rows[0][1].ToString()
+                    };
+                    return result;
+                }
+                else
+                {
+                    return null;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return tenPhong.ToString();
+                throw new Exception(ex.Message);
+            }
+        }
+        public string GetTenPhong(string MaPB)
+        {
+            try
+            {
+                string query = "select TenPB from PhongBan where MaPB = '" + MaPB + "'";
+                object tenPhong = db.ExecuteScalar(query);
+                if (tenPhong == null)
+                {
+                    return "Chưa có";
+                }
+                else
+                {
+                    return tenPhong.ToString();
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+           
+        }
+        public int ThemPhong(PhongBan model)
+        {
+            try
+            {
+                string query = "insert into PhongBan values('" + model.MaPB + "',N'" + model.TenPB + "')";
+                return db.ExecuteNonQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public int SuaPhong(PhongBan model)
+        {
+            try
+            {
+                string query = "update PhongBan set TenPB = N'" + model.TenPB + "' where MaPB = '" + model.MaPB + "'";
+                return db.ExecuteNonQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public int XoaPhong(string MaPB)
+        {
+            try
+            {
+                string query = "delete from PhongBan where MaPB = '" + MaPB + "'";
+                return db.ExecuteNonQuery(query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public int DemNhanVienTheoPhong(string MaPB)
+        {
+            try
+            {
+                string query = "select count(*) from NhanVien where MaPB = '"+MaPB+"'";
+                return (int)db.ExecuteScalar(query);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

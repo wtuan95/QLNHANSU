@@ -41,7 +41,7 @@ namespace QLNHANSU.PL
                     if(quantriBLL.DoiMatKhau(frmDangNhap.taikhoan, txtmatkhaumoi.Text) == 1)
                     {
                         MessageBox.Show("Đổi mật khẩu thành công. Bạn sẽ phải thực hiện đăng nhập lại ngay bây giờ.");
-                        Application.Restart();
+                        Application.Restart();  // khởi động lại app
                     }
 
                 }

@@ -39,11 +39,14 @@
     <Reference Include="DTO">
       <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PL\frmChamcong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmChamcong.Designer.cs">
+      <DependentUpon>frmChamcong.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmQuanlynhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +93,23 @@
     <Compile Include="PL\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmQuanlyphongban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmQuanlyphongban.Designer.cs">
+      <DependentUpon>frmQuanlyphongban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmXemchamcong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmXemchamcong.Designer.cs">
+      <DependentUpon>frmXemchamcong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\frmChamcong.resx">
+      <DependentUpon>frmChamcong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmQuanlynhanvien.resx">
       <DependentUpon>frmQuanlynhanvien.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +125,12 @@
     <EmbeddedResource Include="PL\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmQuanlyphongban.resx">
+      <DependentUpon>frmQuanlyphongban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmXemchamcong.resx">
+      <DependentUpon>frmXemchamcong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -111,6 +141,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\BLL.ChamCongBLL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -131,7 +162,9 @@
     <Content Include="Images\access.jpg" />
     <Content Include="Images\change_password.jpg" />
     <Content Include="Images\connection.jpg" />
+    <Content Include="Images\door.ico" />
     <Content Include="Images\login.jpg" />
+    <Content Include="Images\users.ico" />
     <Content Include="Images\Visual-Studio-2015.jpg" />
     <Content Include="Photos\nv01.bmp" />
     <Content Include="Photos\ndtruong.bmp" />

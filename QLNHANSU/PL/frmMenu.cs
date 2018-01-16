@@ -50,5 +50,21 @@ namespace QLNHANSU.PL
         {
             Application.Exit();
         }
+
+        private void quảnLýPhòngBanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanlyphongban frm = new PL.frmQuanlyphongban();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void chấmCôngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChamcong frm = new PL.frmChamcong();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+    
     }
 }

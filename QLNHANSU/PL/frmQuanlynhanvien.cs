@@ -106,6 +106,8 @@ namespace QLNHANSU.PL
                 txtGhichu.Text = nvSelected.GhiChu;
                 txtTaoboi.Text = nvSelected.TaiKhoanTao;
                 chkGioitinh.Checked = nvSelected.GioiTinh;
+                ChucVuBLL chucvuBLL = new ChucVuBLL();
+                numLuong.Value = (decimal)chucvuBLL.LayLuongCoBan(cbChucvu.SelectedValue.ToString());
             }
         }
 
@@ -337,6 +339,7 @@ namespace QLNHANSU.PL
                 MessageBox.Show("Bạn chưa chọn nhân viên muốn sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            
             them = false;
             picHinh.Image = null;
             nameImage = "";
