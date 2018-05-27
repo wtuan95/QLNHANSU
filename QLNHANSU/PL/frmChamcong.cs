@@ -72,18 +72,24 @@ namespace QLNHANSU.PL
                         else
                             return;
                     }
+                   string LuongNhan = txtLuongNhan.Text.Replace(".", "").ToString();
+                  
                     ChamCong model = new ChamCong()
                     {
                         MaNV = MaNV,
                         Thang = int.Parse(cbThang.Text),
                         Nam = int.Parse(cbNam.Text),
                         SoNgayLam = (int)numSongaylam.Value,
-                        LuongNhan = (int)numLuong.Value,
-                        TaiKhoanCham = string.IsNullOrEmpty(frmDangNhap.taikhoan) ? "admin" : frmDangNhap.taikhoan,
+                        HeSoLuong = (float)numHesoluong.Value,
+                        DaTraTruoc = (int)numDatratruoc.Value,
+                        PhuCapThang = (int)numPhucapthang.Value,
+                        LuongNhan = int.Parse(LuongNhan),
+                        TaiKhoanCham = frmDangNhap.taikhoan,
                         NgayCham = DateTime.Now
                     };
                     chamcongBLL.ThemChamCong(model);
                     MessageBox.Show("Lưu thành công");
+                    this.Close();
                 }
                 catch(Exception ex)
                 {
@@ -107,31 +113,29 @@ namespace QLNHANSU.PL
                 }
             }
         }
-
-        private void cbThang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            TinhLuong();
-        }
-
-        private void numSongaylam_ValueChanged(object sender, EventArgs e)
-        {
-            TinhLuong();
-        }
-
-        private void txtTennhanvien_TextChanged(object sender, EventArgs e)
-        {
-            TinhLuong();
-        }
         void  TinhLuong()
         {
             if (txtTennhanvien.Text != "" && txtTennhanvien.Text.IndexOf('(') != -1 && txtTennhanvien.Text.IndexOf(')') != -1)
             {
                 try
                 {
+                    KhenThuong_KyLuatBLL khenthuongkyluatBLL = new KhenThuong_KyLuatBLL();
                     string MaNV = txtTennhanvien.Text.Substring(txtTennhanvien.Text.IndexOf('(') + 1);
                     MaNV = MaNV.Remove(MaNV.Length - 1);
-                    decimal luong = chamcongBLL.TinhLuong(MaNV, (int)numSongaylam.Value);
-                    numLuong.Value = luong;
+                    NhanVien model = new NhanVienBLL().DocNhanVienTheoMa(MaNV);
+                    txtManhanvien.Text = MaNV;
+                    txtLuongcoban.Text = new ChucVuBLL().LayLuongCoBan(model.MaCV).ToString("#,##0").Replace(',','.') + " VNĐ";
+                    int PhuCapThang = (int)numPhucapthang.Value;
+                    int DaTraTruoc = (int)numDatratruoc.Value;
+                    float HeSoLuong = (float)numHesoluong.Value;
+                    int Thang = int.Parse(cbThang.Text);
+                    int Nam = int.Parse(cbNam.Text);
+                    int TienKhenThuong = khenthuongkyluatBLL.LayTongTienKhenThuong(MaNV, Thang, Nam);
+                    txtTienkhenthuong.Text = TienKhenThuong.ToString("#,##0").Replace(',', '.') + " VNĐ";
+                    int TienKyLuat = khenthuongkyluatBLL.LayTongTienKyLuat(MaNV, Thang, Nam);
+                    txtTienkyluat.Text = TienKyLuat.ToString("#,##0").Replace(',', '.') + " VNĐ";
+                    int luongNhan = chamcongBLL.TinhLuong(MaNV, (int)numSongaylam.Value,PhuCapThang, DaTraTruoc, HeSoLuong, TienKhenThuong, TienKyLuat);
+                    txtLuongNhan.Text = luongNhan.ToString("#,##0").Replace(',', '.');
                 }
                 catch (Exception ex)
                 {
@@ -141,6 +145,16 @@ namespace QLNHANSU.PL
         }
 
         private void numSongaylam_KeyUp(object sender, KeyEventArgs e)
+        {
+            TinhLuong();
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void valueNumChanged(object sender, EventArgs e)
         {
             TinhLuong();
         }

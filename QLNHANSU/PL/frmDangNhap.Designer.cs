@@ -78,6 +78,7 @@
             this.label1.Size = new System.Drawing.Size(243, 19);
             this.label1.TabIndex = 11;
             this.label1.Text = "Chưa có database? Ấn vào đây để tạo";
+            this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // picDangnhap

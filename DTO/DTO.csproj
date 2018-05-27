@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ChamCong.cs" />
     <Compile Include="ChucVu.cs" />
+    <Compile Include="KhenThuong_KyLuat.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="PhongBan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

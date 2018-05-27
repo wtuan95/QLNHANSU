@@ -12,12 +12,12 @@ namespace BLL
     public class ChamCongBLL
     {
         ConnectDB db = new ConnectDB();
-        public int TinhLuong(string MaNV, int SoNgayLam)
+        public int TinhLuong(string MaNV, int SoNgayLam, int PhuCapThang, int DaTraTruoc, float HeSoLuong, int TienKhenThuong, int TienKyLuat)
         {
             try
             {
                 int LuongCoBan = (int)db.ExecuteScalar("select LuongCoBan from NhanVien, ChucVu where NhanVien.MaCV = ChucVu.MaCV and MaNV = '" + MaNV + "'");
-                int luong = (int)Math.Floor((LuongCoBan / 30.0)) * SoNgayLam;
+                int luong = (int)(Math.Ceiling(((LuongCoBan * HeSoLuong) / 30.0)) * SoNgayLam) + PhuCapThang + TienKhenThuong - DaTraTruoc - TienKyLuat;
                 return luong;
             }
             catch(Exception ex)
@@ -29,7 +29,7 @@ namespace BLL
         {
             try
             {
-                string query = "select * from ChamCong where MaNV = '" + MaNV + "' order by Nam desc, Thang";
+                string query = "select * from ChamCong where MaNV = '" + MaNV + "' order by Nam desc, Thang desc";
                 DataTable dt = db.Execute(query);
                 return dt;
             }
@@ -55,7 +55,7 @@ namespace BLL
         {
             try
             {
-                return db.ExecuteNonQuery("set dateformat dmy insert into ChamCong values('" + model.MaNV + "'," + model.Thang.ToString() + "," + model.Nam.ToString() + ", " + model.SoNgayLam.ToString() + "," + model.LuongNhan.ToString() + ",'" + DateTime.Now.ToString("dd/MM/yyyy") + "','" + model.TaiKhoanCham + "')");
+                return db.ExecuteNonQuery("set dateformat dmy insert into ChamCong values('" + model.MaNV + "'," + model.Thang.ToString() + "," + model.Nam.ToString() + ", " + model.SoNgayLam.ToString() + "," + model.PhuCapThang.ToString() +  "," + model.DaTraTruoc.ToString() + "," + model.HeSoLuong.ToString()+","+ model.LuongNhan.ToString() + ",'" + DateTime.Now.ToString("dd/MM/yyyy") + "','" + model.TaiKhoanCham + "')");
             }
             catch (Exception ex)
             {

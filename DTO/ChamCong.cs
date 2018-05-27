@@ -12,6 +12,12 @@ namespace DTO
 
         public int SoNgayLam { get; set; }  // Số ngày làm
 
+        public int PhuCapThang { get; set; }
+
+        public int DaTraTruoc { get; set; }
+
+        public float HeSoLuong { get; set; }
+
         public int LuongNhan { get; set; }  // Lương được nhận (được tính dựa theo lương cơ bản và phụ cấp)
 
         public DateTime NgayCham { get; set; }  // Ngày thực hiện chấm công

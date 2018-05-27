@@ -59,5 +59,15 @@ namespace QLNHANSU.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Employee_Background_Verification2 {
+            get {
+                object obj = ResourceManager.GetObject("Employee-Background-Verification2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

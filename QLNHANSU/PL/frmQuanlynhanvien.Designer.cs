@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanlynhanvien));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numLuong = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnThayhinh = new System.Windows.Forms.Button();
             this.txtTaoboi = new System.Windows.Forms.TextBox();
             this.txtGhichu = new System.Windows.Forms.TextBox();
@@ -74,19 +76,16 @@
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnBoLoc = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numLuong = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHinh)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numLuong)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -145,6 +144,32 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
+            // 
+            // numLuong
+            // 
+            this.numLuong.Increment = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numLuong.Location = new System.Drawing.Point(851, 189);
+            this.numLuong.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.numLuong.Name = "numLuong";
+            this.numLuong.Size = new System.Drawing.Size(190, 26);
+            this.numLuong.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(742, 196);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 19);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Lương căn bản";
             // 
             // btnThayhinh
             // 
@@ -468,6 +493,7 @@
             this.lvNhanvien.TabIndex = 4;
             this.lvNhanvien.UseCompatibleStateImageBehavior = false;
             this.lvNhanvien.View = System.Windows.Forms.View.Details;
+            this.lvNhanvien.SelectedIndexChanged += new System.EventHandler(this.lvNhanvien_SelectedIndexChanged);
             this.lvNhanvien.Click += new System.EventHandler(this.lvNhanvien_Click);
             // 
             // columnHeader1
@@ -508,7 +534,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Controls.Add(this.btnBoLoc);
             this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnSua);
             this.panel2.Controls.Add(this.btnThem);
@@ -520,16 +545,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1076, 35);
             this.panel2.TabIndex = 5;
-            // 
-            // btnBoLoc
-            // 
-            this.btnBoLoc.Location = new System.Drawing.Point(629, 3);
-            this.btnBoLoc.Name = "btnBoLoc";
-            this.btnBoLoc.Size = new System.Drawing.Size(75, 29);
-            this.btnBoLoc.TabIndex = 0;
-            this.btnBoLoc.Text = "Bỏ lọc";
-            this.btnBoLoc.UseVisualStyleBackColor = true;
-            this.btnBoLoc.Click += new System.EventHandler(this.btnBoLoc_Click);
             // 
             // btnXoa
             // 
@@ -583,32 +598,6 @@
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(742, 196);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 19);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Lương căn bản";
-            // 
-            // numLuong
-            // 
-            this.numLuong.Increment = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numLuong.Location = new System.Drawing.Point(851, 189);
-            this.numLuong.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.numLuong.Name = "numLuong";
-            this.numLuong.Size = new System.Drawing.Size(190, 26);
-            this.numLuong.TabIndex = 18;
-            // 
             // frmQuanlynhanvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -628,10 +617,10 @@
             this.Load += new System.EventHandler(this.frmQuanlynhanvien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHinh)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numLuong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -687,7 +676,6 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnBoLoc;
         private System.Windows.Forms.ListBox lstLoctheophong;
         private System.Windows.Forms.NumericUpDown numLuong;
         private System.Windows.Forms.Label label3;

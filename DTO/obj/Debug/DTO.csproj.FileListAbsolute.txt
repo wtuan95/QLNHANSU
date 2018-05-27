@@ -3,3 +3,8 @@ H:\GitHub\QLNHANSU\DTO\bin\Debug\DTO.pdb
 H:\GitHub\QLNHANSU\DTO\obj\Debug\DTO.dll
 H:\GitHub\QLNHANSU\DTO\obj\Debug\DTO.pdb
 H:\GitHub\QLNHANSU\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+H:\C# Winform\QLNHANSU\DTO\bin\Debug\DTO.dll
+H:\C# Winform\QLNHANSU\DTO\bin\Debug\DTO.pdb
+H:\C# Winform\QLNHANSU\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+H:\C# Winform\QLNHANSU\DTO\obj\Debug\DTO.dll
+H:\C# Winform\QLNHANSU\DTO\obj\Debug\DTO.pdb

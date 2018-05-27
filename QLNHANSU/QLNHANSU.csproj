@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PL\frmBoSungKhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmBoSungKhenThuong.Designer.cs">
+      <DependentUpon>frmBoSungKhenThuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmChamcong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,14 +105,35 @@
     <Compile Include="PL\frmQuanlyphongban.Designer.cs">
       <DependentUpon>frmQuanlyphongban.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmThongtincongty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmThongtincongty.Designer.cs">
+      <DependentUpon>frmThongtincongty.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmXemchamcong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PL\frmXemchamcong.Designer.cs">
       <DependentUpon>frmXemchamcong.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmXemkyluat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmXemkyluat.Designer.cs">
+      <DependentUpon>frmXemkyluat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\frmXemkhenthuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmXemkhenthuong.Designer.cs">
+      <DependentUpon>frmXemkhenthuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\frmBoSungKhenThuong.resx">
+      <DependentUpon>frmBoSungKhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmChamcong.resx">
       <DependentUpon>frmChamcong.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,8 +155,17 @@
     <EmbeddedResource Include="PL\frmQuanlyphongban.resx">
       <DependentUpon>frmQuanlyphongban.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmThongtincongty.resx">
+      <DependentUpon>frmThongtincongty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmXemchamcong.resx">
       <DependentUpon>frmXemchamcong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmXemkyluat.resx">
+      <DependentUpon>frmXemkyluat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmXemkhenthuong.resx">
+      <DependentUpon>frmXemkhenthuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -175,6 +211,7 @@
     <Content Include="Photos\pvkoa.bmp" />
     <Content Include="Photos\tuannguyen.jpg" />
     <Content Include="Photos\zzzzzz.bmp" />
+    <None Include="Resources\Employee-Background-Verification2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

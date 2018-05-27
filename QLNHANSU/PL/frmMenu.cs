@@ -65,6 +65,30 @@ namespace QLNHANSU.PL
             frm.Show();
         }
 
-    
+        private void xemDanhSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmXemkhenthuong frm = new frmXemkhenthuong();
+            frm.Show();
+        }
+
+        private void xemDanhSáchToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmXemkyluat frm = new frmXemkyluat();
+            frm.Show();
+        }
+
+        private void bổSungToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBoSungKhenThuong_KyLuat frm = new frmBoSungKhenThuong_KyLuat(1);  // gia tri 1 là khen thưởng
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void thôngTinCôngTyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThongtincongty frm = new frmThongtincongty();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

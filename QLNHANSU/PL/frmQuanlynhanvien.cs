@@ -30,6 +30,8 @@ namespace QLNHANSU.PL
         void HienListView(List<NhanVien> lst)
         {
             lvNhanvien.Items.Clear();
+            ResetText();
+            ResetValues();
             foreach (NhanVien nv in lst)
             {
                 ListViewItem itemlv = new ListViewItem();
@@ -58,8 +60,9 @@ namespace QLNHANSU.PL
 
         private void frmQuanlynhanvien_Load(object sender, EventArgs e)
         {
-
-            lstLoctheophong.DataSource = phongbanBLL.DocDanhSach().Select(m=>new PhongBan() { MaPB = m.MaPB, TenPB = m.TenPB.ToUpper() }).ToList();
+            List<PhongBan> dsPhong = phongbanBLL.DocDanhSach().Select(m=>new PhongBan { MaPB = m.MaPB, TenPB = m.TenPB.ToUpper()}).ToList();
+            dsPhong.Add(new PhongBan() { MaPB = "all", TenPB = "TẤT CẢ" });
+            lstLoctheophong.DataSource = dsPhong;
             lstLoctheophong.ValueMember = "MaPB";
             lstLoctheophong.DisplayMember = "TenPB";
             lstLoctheophong.SelectedIndex = -1;
@@ -85,30 +88,7 @@ namespace QLNHANSU.PL
 
         private void lvNhanvien_Click(object sender, EventArgs e)
         {
-            if(lvNhanvien.SelectedItems.Count > 0)
-            {
-                btnThayhinh.Visible = true;
-                int index = lvNhanvien.SelectedItems[0].Index;
-                NhanVien nvSelected = nhanvienBLL.DocNhanVienTheoMa(lvNhanvien.Items[index].Text);
-                picHinh.Image = Image.FromFile(Environment.CurrentDirectory + "/../../Photos/" + nvSelected.Hinh);
-                lblHoten.Text = nvSelected.HoTen + " ("+nvSelected.MaNV+")";
-                txtMaNV.Text = nvSelected.MaNV;
-                cbPhongban.SelectedValue = nvSelected.MaPB;
-                cbChucvu.SelectedValue = nvSelected.MaCV;
-                cbTrinhdo.SelectedValue = nvSelected.MaTD;
-                txtHoten.Text = nvSelected.HoTen;
-                dtimeNgaysinh.Value = nvSelected.NgaySinh;
-                dtimeNgayvaolam.Value = nvSelected.NgayVaoLam;
-                txtDiachi.Text = nvSelected.DiaChi;
-                txtCMND.Text = nvSelected.CMND;
-                txtEmail.Text = nvSelected.Email;
-                txtDienthoai.Text = nvSelected.DienThoai;
-                txtGhichu.Text = nvSelected.GhiChu;
-                txtTaoboi.Text = nvSelected.TaiKhoanTao;
-                chkGioitinh.Checked = nvSelected.GioiTinh;
-                ChucVuBLL chucvuBLL = new ChucVuBLL();
-                numLuong.Value = (decimal)chucvuBLL.LayLuongCoBan(cbChucvu.SelectedValue.ToString());
-            }
+            
         }
 
         private void btnBoLoc_Click(object sender, EventArgs e)
@@ -119,11 +99,17 @@ namespace QLNHANSU.PL
 
         private void lstLoctheophong_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(lstLoctheophong.SelectedIndex != -1)
+            if (lstLoctheophong.SelectedIndex != -1)
             {
                 string maPB = lstLoctheophong.SelectedValue.ToString();
-
-                HienListView(nhanvienBLL.DocDanhSach(maPB));
+                if (maPB != "all")
+                    HienListView(nhanvienBLL.DocDanhSach(maPB));
+                else
+                    HienListView(nhanvienBLL.DocDanhSach());
+                if(lvNhanvien.Items.Count > 0)
+                {
+                    lvNhanvien.Items[0].Selected = true;
+                }
             }
         }
 
@@ -137,7 +123,8 @@ namespace QLNHANSU.PL
                 }
                 if(ctrl.GetType() == typeof(ComboBox))
                 {
-                    (ctrl as ComboBox).SelectedIndex = 0;
+                    if((ctrl as ComboBox).Items.Count > 0)
+                        (ctrl as ComboBox).SelectedIndex = 0;
                 }
             }
             picHinh.Image = null;
@@ -360,6 +347,34 @@ namespace QLNHANSU.PL
                     lvNhanvien.Items.RemoveAt(index);
                     MessageBox.Show("Xóa thành công");
                 }
+            }
+        }
+
+        private void lvNhanvien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvNhanvien.SelectedItems.Count > 0)
+            {
+                btnThayhinh.Visible = true;
+                int index = lvNhanvien.SelectedItems[0].Index;
+                NhanVien nvSelected = nhanvienBLL.DocNhanVienTheoMa(lvNhanvien.Items[index].Text);
+                picHinh.Image = Image.FromFile(Environment.CurrentDirectory + "/../../Photos/" + nvSelected.Hinh);
+                lblHoten.Text = nvSelected.HoTen + " (" + nvSelected.MaNV + ")";
+                txtMaNV.Text = nvSelected.MaNV;
+                cbPhongban.SelectedValue = nvSelected.MaPB;
+                cbChucvu.SelectedValue = nvSelected.MaCV;
+                cbTrinhdo.SelectedValue = nvSelected.MaTD;
+                txtHoten.Text = nvSelected.HoTen;
+                dtimeNgaysinh.Value = nvSelected.NgaySinh;
+                dtimeNgayvaolam.Value = nvSelected.NgayVaoLam;
+                txtDiachi.Text = nvSelected.DiaChi;
+                txtCMND.Text = nvSelected.CMND;
+                txtEmail.Text = nvSelected.Email;
+                txtDienthoai.Text = nvSelected.DienThoai;
+                txtGhichu.Text = nvSelected.GhiChu;
+                txtTaoboi.Text = nvSelected.TaiKhoanTao;
+                chkGioitinh.Checked = nvSelected.GioiTinh;
+                ChucVuBLL chucvuBLL = new ChucVuBLL();
+                numLuong.Value = (decimal)chucvuBLL.LayLuongCoBan(nvSelected.MaCV);
             }
         }
     }

@@ -34,6 +34,9 @@
             this.Thang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoNgayLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhuCapThang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DaTraTruoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LuongNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayCham = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TaiKhoanCham = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +67,9 @@
             this.Thang,
             this.Nam,
             this.SoNgayLam,
+            this.PhuCapThang,
+            this.DaTraTruoc,
+            this.HeSoLuong,
             this.LuongNhan,
             this.NgayCham,
             this.TaiKhoanCham});
@@ -101,6 +107,27 @@
             this.SoNgayLam.HeaderText = "Số ngày làm";
             this.SoNgayLam.Name = "SoNgayLam";
             this.SoNgayLam.ReadOnly = true;
+            // 
+            // PhuCapThang
+            // 
+            this.PhuCapThang.DataPropertyName = "PhuCapThang";
+            this.PhuCapThang.HeaderText = "Phụ cấp tháng";
+            this.PhuCapThang.Name = "PhuCapThang";
+            this.PhuCapThang.ReadOnly = true;
+            // 
+            // DaTraTruoc
+            // 
+            this.DaTraTruoc.DataPropertyName = "DaTraTruoc";
+            this.DaTraTruoc.HeaderText = "Đã trả trước";
+            this.DaTraTruoc.Name = "DaTraTruoc";
+            this.DaTraTruoc.ReadOnly = true;
+            // 
+            // HeSoLuong
+            // 
+            this.HeSoLuong.DataPropertyName = "HeSoLuong";
+            this.HeSoLuong.HeaderText = "Hệ số lương";
+            this.HeSoLuong.Name = "HeSoLuong";
+            this.HeSoLuong.ReadOnly = true;
             // 
             // LuongNhan
             // 
@@ -149,6 +176,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Thang;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nam;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoNgayLam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhuCapThang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DaTraTruoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeSoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn LuongNhan;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayCham;
         private System.Windows.Forms.DataGridViewTextBoxColumn TaiKhoanCham;

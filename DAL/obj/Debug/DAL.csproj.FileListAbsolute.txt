@@ -3,3 +3,8 @@ H:\GitHub\QLNHANSU\DAL\bin\Debug\DAL.pdb
 H:\GitHub\QLNHANSU\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 H:\GitHub\QLNHANSU\DAL\obj\Debug\DAL.dll
 H:\GitHub\QLNHANSU\DAL\obj\Debug\DAL.pdb
+H:\C# Winform\QLNHANSU\DAL\bin\Debug\DAL.dll
+H:\C# Winform\QLNHANSU\DAL\bin\Debug\DAL.pdb
+H:\C# Winform\QLNHANSU\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+H:\C# Winform\QLNHANSU\DAL\obj\Debug\DAL.dll
+H:\C# Winform\QLNHANSU\DAL\obj\Debug\DAL.pdb

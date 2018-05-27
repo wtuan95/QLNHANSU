@@ -60,11 +60,8 @@ H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.pdb
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csprojResolveAssemblyReference.cache
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDangNhap.resources
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmDoimatkhau.resources
-H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmdsNhanvien.resources
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmKetNoi.resources
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmMenu.resources
-H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmSuaNhanVien.resources
-H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmThemNhanvien.resources
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Properties.Resources.resources
 H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.csproj.GenerateResource.Cache
 H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\QLNHANSU.exe.config
@@ -101,3 +98,29 @@ H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
 H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
 H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 H:\GitHub\QLNHANSU\QLNHANSU\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\BLL.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\DTO.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\DAL.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\Microsoft.SqlServer.Types.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\BLL.pdb
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\DTO.pdb
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\DAL.pdb
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmChamcong.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmQuanlynhanvien.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmQuanlyphongban.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmXemchamcong.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmXemkyluat.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmXemkhenthuong.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmBoSungKhenThuong_KyLuat.resources
+H:\C# Winform\QLNHANSU\QLNHANSU\obj\Debug\QLNHANSU.PL.frmThongtincongty.resources
